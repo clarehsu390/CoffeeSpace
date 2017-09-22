@@ -5,8 +5,8 @@ const currentUserReducer = (
 ) => {
     switch(action.type) {
         case RECEIVE_CURRENT_USER:
-        const user = action.user;
-        return user;
+            const user = action.user;
+            return user;
     
         default:
         return state;
