@@ -1,6 +1,6 @@
 import { RECEIVE_CURRENT_USER } from '../actions/session_actions';
 
-export const currentUserReducer = (
+const currentUserReducer = (
     state = null, action
 ) => {
     switch(action.type) {
@@ -14,3 +14,4 @@ export const currentUserReducer = (
 
 };
 
+export default currentUserReducer;
