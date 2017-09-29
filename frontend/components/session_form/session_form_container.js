@@ -3,10 +3,10 @@ import { signup, login } from '../../actions/session_actions';
 import SessionForm from './session_form';
 
 const mapStateToProps = (state, ownProps) => {
-    loggedIn: Boolean(state.currentUser)
+    loggedIn: Boolean(state.currentUser);
 };
 
-const mapDispatchToProps = (dispatch, {location}) => {
+const mapDispatchToProps = (dispatch, { location }) => {
     const formType = location.pathname.slice(1);
     const processForm = (formType === 'login') ? login : signup;
     return {
