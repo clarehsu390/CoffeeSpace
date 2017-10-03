@@ -3,8 +3,24 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .login-form {
     font-family:Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
-.session-button {
-    border: 2px solid black;
+.login-form input {
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.submit-button {
+    border: solid 1px black;
+}
+
+
+
+.session-form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }

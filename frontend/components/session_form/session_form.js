@@ -25,16 +25,19 @@ class SessionForm extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="session-form">
+                <h1>Login to continue</h1>
                 <form className="login-form">
-                <label>Username:
+                <label>
                 <input type="text"
+                placeholder="Username"
                 value={this.state.username}
                 onChange={this.update('username')}/> 
                 </label>
-
-                <label>Password:
+                <br/>
+                <label>
                     <input type="password"
+                    placeholder="Password"
                     value={this.state.password}
                     onChange={this.update('password')}/> 
 
