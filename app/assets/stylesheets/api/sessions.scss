@@ -2,9 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .login-form {
-    font-family:Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    margin-top: 10px;
+    background: white;
+    
+
 }
 
 .login-form input {
@@ -15,9 +19,10 @@
 
 .submit-button {
     border: solid 1px black;
+    padding: 5px;
+    margin-top: 10px;
+    text-align: center;
 }
-
-
 
 .session-form {
    display: flex;
@@ -27,4 +32,6 @@
    position: absolute;
    height: 100%;
    width: 100%;
+   background-image: url("coffee-background.jpg");
+   background-size: cover;
 }
