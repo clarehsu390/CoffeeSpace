@@ -27,6 +27,7 @@ class SessionForm extends React.Component {
         return (
             <div className="session-form">
                 <div className="session-body">
+                <h1>Coffee Space</h1>
                 <h1>Login to continue</h1>
                 <form className="login-form">
                 <label>

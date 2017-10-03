@@ -17,10 +17,10 @@
 }
 
 .session-body {
-    background-color: #DCC7AA;
+    background-color: #F7882F;
     opacity: 50%;
-    height: 50%;
-    width: 50%;
+    height: 40%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -51,4 +51,9 @@
    width: 100%;
    background-image: url("coffee-background.jpg");
    background-size: cover;
+}
+
+.session-form h1 {
+    font-size: 24px;
+    color: white;
 }
