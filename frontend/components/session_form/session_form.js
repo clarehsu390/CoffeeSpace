@@ -26,6 +26,7 @@ class SessionForm extends React.Component {
     render() {
         return (
             <div className="session-form">
+                <div className="session-body">
                 <h1>Login to continue</h1>
                 <form className="login-form">
                 <label>
@@ -44,6 +45,7 @@ class SessionForm extends React.Component {
                 </label>
                 <button className="submit-button" onClick={this.handleSubmit}>Submit</button>
             </form>
+                </div>
             </div>
         );
     }

@@ -1,20 +1,37 @@
 // Place all the styles related to the api/sessions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// #687A8F - blueberry
+// #F7882F - Apricot
+// #E7C331 - Citrus
+// #DCC7AA - Apple core
+
+
 .login-form {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     margin-top: 10px;
-    background: white;
+    align-items: center;
     
+}
 
+.session-body {
+    background-color: #DCC7AA;
+    opacity: 50%;
+    height: 50%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .login-form input {
     border: solid 1px black;
     border-radius: 5px;
     padding: 5px;
+    background-color: white;
 }
 
 .submit-button {
