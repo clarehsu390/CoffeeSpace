@@ -1,5 +1,5 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
+import { withRouter, Link } from 'react-router-dom';
 
 class SessionForm extends React.Component {
     constructor(props){
@@ -23,12 +23,20 @@ class SessionForm extends React.Component {
         });
     }
 
+    navLink() {
+        if (this.props.formType === 'login') {
+            return <Link to ='/signup'>sign up instead</Link>;
+        } else {
+            return <Link to='/login'>log in instead</Link>;
+        }
+    }
+
     render() {
         return (
             <div className="session-form">
                 <div className="session-body">
                 <h1>Coffee Space</h1>
-                <h1>Login to continue</h1>
+                <h3>Please {this.props.formType} or {this.navLink()}</h3>
                 <form className="login-form">
                 <label>
                 <input type="text"

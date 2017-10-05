@@ -5,6 +5,7 @@ import SessionFormContainer from './session_form/session_form_container';
 const App = () => (
     <div>
         <Route path="/login" component={SessionFormContainer}/>
+        <Route path="/signup" component={SessionFormContainer}/>
     </div>
 );
 
