@@ -31,6 +31,18 @@ class SessionForm extends React.Component {
         }
     }
 
+    renderErrors(){
+        return(
+            <ul>
+                {this.props.errors.map((error, i) =>  (
+                    <li key={i}>
+                        {error}
+                    </li>
+                ))}
+            </ul>
+        );
+    }
+
     render() {
         return (
             <div className="session-form">
@@ -52,6 +64,7 @@ class SessionForm extends React.Component {
                     onChange={this.update('password')}/> 
 
                 </label>
+                {this.renderErrors()}
                 <button className="submit-button" onClick={this.handleSubmit}>Submit</button>
             </form>
                 </div>
