@@ -7,7 +7,6 @@
 // #E7C331 - Citrus
 // #DCC7AA - Apple core
 
-
 .login-form {
     display: flex;
     flex-direction: column;
@@ -26,10 +25,10 @@
     justify-content: center;
     align-items: center;
     border-radius: 8px;
+    font-family: 'Helvetica', Helvetica, Arial, sans-serif;
 }
 
 .login-form input {
-    border: solid 1px gray;
     border-radius: 5px;
     padding: 8px;
     background-color: white;
@@ -63,7 +62,8 @@
 }
 
 .session-form h1 {
-    font-size: 24px;
+    font-family: 'Delius Unicase', cursive;
+    font-size: 32px;
     color: white;
 }
 

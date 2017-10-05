@@ -31,6 +31,16 @@ class SessionForm extends React.Component {
         }
     }
 
+    componentWillUnmount() {
+        this.props.clearErrors();
+    }
+
+    componentWillReceiveProps(nextProps){
+        if (nextProps.loggedIn) {
+            this.props.history.push('/');
+        }
+    }
+
     renderErrors(){
         return(
             <ul>
