@@ -25,6 +25,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 8px;
 }
 
 .login-form input {
@@ -32,7 +33,7 @@
     border-radius: 5px;
     padding: 8px;
     background-color: white;
-    height: 30px;
+    height: 25px;
     width: 200px;
 }
 

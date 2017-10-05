@@ -3,7 +3,8 @@ import { signup, login } from '../../actions/session_actions';
 import SessionForm from './session_form.js';
 
 const mapStateToProps = (state) => ({
-    loggedIn: Boolean(state.currentUser)
+    loggedIn: Boolean(state.currentUser),
+    errors: state.errors
 });
 
 const mapDispatchToProps = (dispatch, { location }) => {
