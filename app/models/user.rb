@@ -6,6 +6,11 @@ class User < ApplicationRecord
     attr_reader :password
     after_initialize :ensure_session_token
 
+    has_many :shops,
+    primary_key: :id,
+    foreign_key: :owner_id,
+    class_name: :Shop
+
     def password=(password)
         self.password_digest = BCrypt::Password.create(password)
         @password = password
