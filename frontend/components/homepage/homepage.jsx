@@ -11,13 +11,14 @@ export default class Homepage extends React.Component {
       return (
         <div className="homepage">
           <h1>Welcome to Coffee Space</h1>
-          <h2>Your seat is waiting for you</h2>
-          <div className="links">
-          <Link to='/login'>Login</Link>
-          <Link to='/signup'>Sign up</Link>
-          </div>
+          <Link to='/login'><h2>Your seat is waiting for you</h2></Link>
 
         </div>
+      );
+    }
+    else {
+      return (
+        <div></div>
       );
     }
   }
