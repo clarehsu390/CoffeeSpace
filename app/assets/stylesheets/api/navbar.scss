@@ -1,0 +1,11 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+
+.navbar input {
+  border: solid 1px black;
+  padding: 5px;
+}
