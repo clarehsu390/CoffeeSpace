@@ -18,20 +18,26 @@ export default class NavBar extends React.Component {
       return (
 
         <section className="navbar">
-          <input type="text" className="search" placeholder="Search"/>
-          <input type="text" placeholder="Location"/>
-          <Link to="/">Register your coffee shop</Link>
-          <div className="profile">
-          <i className="fa fa-user fa-2x"
-            aria-hidden="true"
-            onClick={this.handleUserClick}>
-          </i>
+          <h2>Coffee Space</h2>
+          <div className="inputs">
+            <input type="text" className="search" placeholder="Search"/>
+            <input type="text" placeholder="Location"/>
+            <button>Submit</button>
           </div>
-          <div className="logout">
-          <i className="fa fa-sign-out fa-2x"
-            aria-hidden="true"
-            onClick={this.handleClick}>
-          </i>
+          <div className="icons">
+            <Link to="/">Register your coffee shop</Link>
+            <div className="profile">
+              <i className="fa fa-user fa-2x"
+                aria-hidden="true"
+                onClick={this.handleUserClick}>
+              </i>
+            </div>
+            <div className="logout">
+              <i className="fa fa-sign-out fa-2x"
+                aria-hidden="true"
+                onClick={this.handleClick}>
+              </i>
+            </div>
           </div>
         </section>
       );
