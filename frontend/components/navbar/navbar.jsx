@@ -21,15 +21,18 @@ export default class NavBar extends React.Component {
           <input type="text" className="search" placeholder="Search"/>
           <input type="text" placeholder="Location"/>
           <Link to="/">Register your coffee shop</Link>
+          <div className="profile">
           <i className="fa fa-user fa-2x"
             aria-hidden="true"
             onClick={this.handleUserClick}>
           </i>
+          </div>
+          <div className="logout">
           <i className="fa fa-sign-out fa-2x"
             aria-hidden="true"
             onClick={this.handleClick}>
-
           </i>
+          </div>
         </section>
       );
     } else {

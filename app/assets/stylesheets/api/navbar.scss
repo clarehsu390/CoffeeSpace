@@ -4,9 +4,16 @@
   justify-content: space-around;
   padding-top: 10px;
   font-family: 'Futura';
+
 }
 
 .navbar input {
   border: solid 1px black;
   padding: 5px;
+  border-radius: 5px;
+}
+
+.navbar i:hover{
+  cursor: pointer;
+  opacity: 1
 }
