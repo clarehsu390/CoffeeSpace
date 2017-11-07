@@ -6,6 +6,7 @@
   font-family: 'Futura';
   height: 50px;
   border-bottom: inset 1px #E7C331;
+  color: #DCC7AA;
 }
 
 .navbar input{
@@ -15,6 +16,10 @@
   width: 250px;
   height: 20px;
   margin-left: 10px;
+}
+
+.navbar a {
+  color: black;
 }
 
 .inputs{
@@ -37,12 +42,12 @@
 }
 
 .inputs button {
-  border: solid 1px #E7C331;
+  border: solid 1px #DCC7AA;
   margin-left: 10px;
   padding: 5px;
   width: 50px;
   height: 20px;
   border-radius: 5px;
-  background-color: #E7C331;
+  background-color: #DCC7AA;
   color: white;
 }
