@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Search from './search';
 export default class ShopMap extends React.Component {
     constructor(props) {
         super(props);
@@ -33,7 +33,10 @@ export default class ShopMap extends React.Component {
 
     render() {
         return(
+            <div>
+            <Search map={this.state.map} />
             <div id="map-container" ref={ map => this.mapNode = map }>
+            </div>
             </div>
         );
     }

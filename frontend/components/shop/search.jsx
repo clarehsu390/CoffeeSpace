@@ -30,14 +30,22 @@ export default class Search extends React.Component {
                     anchor: new google.maps.Point(17, 34),
                     scaledSize: new google.maps.Size(25, 25)
                   };
-            })
+            });
 
-        })
+            markers.push(new google.maps.Marker({
+                map: this.props.map,
+                icon: icon,
+                title: place.name,
+                position: place.geometry.location
+            }));
+        });
    }
 
    render() {
        return (
-        <input type="text" id="search" placeholder="Search"/>
+           <div>
+            <input type="text" id="search" placeholder="Search"/>
+        </div>
        );
    }
 }

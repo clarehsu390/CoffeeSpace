@@ -20,8 +20,6 @@ export default class NavBar extends React.Component {
         <section className="navbar">
           <h2>Coffee Space</h2>
           <div className="inputs">
-            
-            <Search />
             <input type="text" placeholder="Location"/>
             <button>Submit</button>
           </div>
