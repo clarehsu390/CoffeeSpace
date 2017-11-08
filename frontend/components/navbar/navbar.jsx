@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import Search from '../shop/search';
 export default class NavBar extends React.Component {
   constructor(props){
     super(props);
@@ -20,7 +20,8 @@ export default class NavBar extends React.Component {
         <section className="navbar">
           <h2>Coffee Space</h2>
           <div className="inputs">
-            <input type="text" className="search" placeholder="Search"/>
+            
+            <Search />
             <input type="text" placeholder="Location"/>
             <button>Submit</button>
           </div>
