@@ -9,7 +9,7 @@ export default class Search extends React.Component {
        let input = document.getElementById('search');
         this.search = new google.maps.places.SearchBox(input);
         this.search.addListener('places_changed', () => {
-            let places = searchBox.getPlaces();
+            let places = this.search.getPlaces();
 
             if (places.length === 0) {
                 return;
