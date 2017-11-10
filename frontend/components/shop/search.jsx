@@ -1,8 +1,11 @@
 import React from 'react';
-
+import Results from './results';
 export default class Search extends React.Component {
     constructor(props) {
         super(props);
+        this.state = {
+            places: []
+        };
     }
 
    componentDidMount() {
@@ -25,7 +28,8 @@ export default class Search extends React.Component {
            let bounds = new google.maps.LatLngBounds();
         
            places.forEach((place) => {
-               console.log(place);
+               this.state.places.push(place);
+               console.log(this.state.places);
                let icon = {
                    url: place.icon,
                    size: new google.maps.Size(71, 71),
@@ -50,11 +54,11 @@ export default class Search extends React.Component {
        this.props.map.fitBounds(bounds);
     });
    }
-   
 
    render() {
-       return (
-           <div>
+    
+    return (
+        <div>
             <input type="text" id="search" placeholder="Search"/>
         </div>
        );
