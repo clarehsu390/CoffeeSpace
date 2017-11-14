@@ -64,8 +64,11 @@ export default class Search extends React.Component {
 
         return (
             <div className="search">
+                <div>
                 <input type="text" id="search" placeholder="Search"/>
+                </div>
                 <div className="results">
+                    <h4>Results</h4>
                     <ul id="list-results">
                         {this.state.places.map((result, i) => {
                         return(
