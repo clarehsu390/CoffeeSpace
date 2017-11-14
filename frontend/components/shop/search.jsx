@@ -21,6 +21,7 @@ export default class Search extends React.Component {
     });
        this.search.addListener('places_changed', () => {
            let places = this.search.getPlaces();
+           console.log(places);
            let markers = [];
            markers.forEach((marker) => {
                marker.setMap(null);
@@ -62,7 +63,7 @@ export default class Search extends React.Component {
     if (this.state.render) {
 
         return (
-            <div>
+            <div className="search">
                 <input type="text" id="search" placeholder="Search"/>
                 <div className="results">
                     <ul id="list-results">
