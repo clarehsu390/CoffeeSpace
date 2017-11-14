@@ -26,10 +26,10 @@ export default class NavBar extends React.Component {
           <div className="icons">
             <Link to="/">Register your coffee shop</Link>
             <div className="profile">
-              <i className="fa fa-user fa-2x"
-                aria-hidden="true"
-                onClick={this.handleUserClick}>
+              <Link to={`/${this.props.currentUser.id}`}><i className="fa fa-user fa-2x"
+                aria-hidden="true">
               </i>
+              </Link>
             </div>
             <div className="logout">
               <i className="fa fa-sign-out fa-2x"
