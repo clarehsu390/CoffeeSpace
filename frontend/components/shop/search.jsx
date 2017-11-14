@@ -72,7 +72,14 @@ export default class Search extends React.Component {
                     <ul id="list-results">
                         {this.state.places.map((result, i) => {
                         return(
-                            <li key={i}>{result.name}</li>
+                            <ul key={i} id="list-item">
+                            <li>{result.name}</li>
+                            <div id="details">
+                            <li>Price Level: {result.price_level}</li>
+                            <li>Rating: {result.rating}</li>
+                            </div>
+                            </ul>
+                            
                         );
                         })}
                     </ul>

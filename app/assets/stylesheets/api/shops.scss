@@ -28,5 +28,16 @@
 
 .search {
     width: 300px;
-  
+    padding: 10px;
+}
+
+#details {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+}
+
+#list-item {
+    border-bottom: solid 2px #687A8F;
+    padding: 5px;
 }
