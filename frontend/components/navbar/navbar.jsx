@@ -26,7 +26,7 @@ export default class NavBar extends React.Component {
           <div className="icons">
             <Link to="/">Register your coffee shop</Link>
             <div className="profile">
-              <Link to={`/${this.props.currentUser.id}`}><i className="fa fa-user fa-2x"
+              <Link to={`/${this.props.currentUser.username}`}><i className="fa fa-user fa-2x"
                 aria-hidden="true">
               </i>
               </Link>

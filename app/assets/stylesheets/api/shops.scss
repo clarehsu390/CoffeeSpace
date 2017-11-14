@@ -27,8 +27,9 @@
 }
 
 .search {
+    font-family: 'Futura';
     width: 300px;
-    padding: 10px;
+    margin: 10px;
 }
 
 #details {
@@ -39,5 +40,13 @@
 
 #list-item {
     border-bottom: solid 2px #687A8F;
+    padding: 5px;
+}
+
+.results {
+    margin: 10px;
+}
+
+.results li {
     padding: 5px;
 }

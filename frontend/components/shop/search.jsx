@@ -1,5 +1,6 @@
 import React from 'react';
 import Results from './results';
+import { Link } from 'react-router-dom';
 export default class Search extends React.Component {
     constructor(props) {
         super(props);
@@ -73,10 +74,10 @@ export default class Search extends React.Component {
                         {this.state.places.map((result, i) => {
                         return(
                             <ul key={i} id="list-item">
-                            <li>{result.name}</li>
+                            <Link to={`/${result.id}`}><li>{result.name}</li></Link>
                             <div id="details">
                             <li>Price Level: {result.price_level}</li>
-                            <li>Rating: {result.rating}</li>
+                            <li id="rating">Rating: {result.rating}</li>
                             </div>
                             </ul>
                             
