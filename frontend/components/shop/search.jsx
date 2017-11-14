@@ -4,7 +4,8 @@ export default class Search extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            places: []
+            places: [],
+            render: false
         };
     }
 
@@ -37,6 +38,9 @@ export default class Search extends React.Component {
                    scaledSize: new google.maps.Size(25, 25)
                  };
 
+                 this.setState({
+                     render: true
+                 });
            markers.push(new google.maps.Marker({
                map: this.props.map,
                icon: icon,
@@ -55,20 +59,26 @@ export default class Search extends React.Component {
    }
 
    render() {
-    
-    return (
-        <div>
-            <input type="text" id="search" placeholder="Search"/>
-            <div className="results">
-                <ul>
-                    {this.state.places.map((result, i) => {
-                    return(
-                        <li key={i}>{result.name}</li>
-                    );
-                    })}
-                </ul>
+    if (this.state.render) {
+
+        return (
+            <div>
+                <input type="text" id="search" placeholder="Search"/>
+                <div className="results">
+                    <ul id="list-results">
+                        {this.state.places.map((result, i) => {
+                        return(
+                            <li key={i}>{result.name}</li>
+                        );
+                        })}
+                    </ul>
+                </div>
             </div>
-        </div>
-       );
+           );
+    } else {
+        return (
+            <input type="text" id="search" placeholder="Search"/>
+        );
+    }
    }
 }
