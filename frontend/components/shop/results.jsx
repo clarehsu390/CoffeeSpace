@@ -5,6 +5,12 @@ export default class Results extends React.Component {
         super(props);
     }
 
+    // componentWillReceiveProps(nextProps) {
+    //     if (this.props.places !== this.nextProps.places) {
+    //         this.props.places = this.nextProps.places;
+    //     }
+    // }
+
     render() {
 
             return(

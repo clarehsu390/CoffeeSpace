@@ -29,7 +29,6 @@ export default class Search extends React.Component {
         
            places.forEach((place) => {
                this.state.places.push(place);
-               console.log(this.state.places);
                let icon = {
                    url: place.icon,
                    size: new google.maps.Size(71, 71),
@@ -60,6 +59,15 @@ export default class Search extends React.Component {
     return (
         <div>
             <input type="text" id="search" placeholder="Search"/>
+            <div className="results">
+                <ul>
+                    {this.state.places.map((result, i) => {
+                    return(
+                        <li key={i}>{result.name}</li>
+                    );
+                    })}
+                </ul>
+            </div>
         </div>
        );
    }
