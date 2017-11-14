@@ -8,7 +8,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchtoProps = dispatch => ({
-    receiveSingleUser: id => dispatch(receiveCurrentUser(id))
+    receiveCurrentUser: id => dispatch(receiveCurrentUser(id))
 });
 
 export default connect(mapStateToProps, mapDispatchtoProps)(UserProfile);

@@ -18,7 +18,7 @@ export default class NavBar extends React.Component {
       return (
 
         <section className="navbar">
-          <h2>Coffee Space</h2>
+          <Link to="/"><h2>Coffee Space</h2></Link>
           <div className="inputs">
             <input type="text" placeholder="Location"/>
             <button>Submit</button>

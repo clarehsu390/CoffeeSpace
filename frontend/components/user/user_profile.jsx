@@ -14,8 +14,12 @@ class UserProfile extends React.Component {
         if ( this.props.loggedIn) {
             return (
                 <div className='profile'>
-                    <h3>{this.props.currentUser.username}</h3>
+                    <h3>Welcome back, {this.props.currentUser.username}</h3>
                     <img src="{this.props.currentUser.image_url}" alt=""/>
+                    <div className='reservations'>
+                        <h3>Your reservations</h3>
+
+                    </div>
                 </div>
             );
         } else {
