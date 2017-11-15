@@ -3,9 +3,10 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #map-container {
-    height: 500px;
-    width: 500px;
+    height: 700px;
+    width: 700px;
     float: right;
+    position: fixed;
 }
 
 #search {
@@ -49,4 +50,9 @@
 
 .results li {
     padding: 5px;
+}
+
+#map-search {
+    display: flex;
+    justify-content: space-between;
 }

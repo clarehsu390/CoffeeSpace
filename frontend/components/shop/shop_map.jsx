@@ -33,7 +33,7 @@ export default class ShopMap extends React.Component {
 
     render() {
         return(
-            <div>
+            <div id="map-search">
             <Search map={this.state.map} />
             <div id="map-container" ref={ map => this.mapNode = map }>
             </div>
