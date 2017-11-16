@@ -7,17 +7,20 @@ import HomepageContainer from './homepage/homepage_container';
 import NavBarContainer from './navbar/navbar_container';
 import ShopMap from './shop/shop_map';
 import UserProfileContainer from './user/user_container';
+import ShopDetails from'./shop/shop_details';
 const App = () => (
     <div>
-        <Route exact path="/" component={HomepageContainer} />
         <Route path="/" component={NavBarContainer}/>
+        <Switch>
+        <Route exact path="/" component={HomepageContainer} />
         <ProtectedRoute exact path="/" component={ShopMap}/>
-
+        </Switch>
         <Switch>
         <AuthRoute path="/login" component={SessionFormContainer}/>
         <AuthRoute path="/signup" component={SessionFormContainer}/>
         </Switch>
         <ProtectedRoute path="/:userId" component={UserProfileContainer}/>
+        <ProtectedRoute path="/shop/:shopId/" component={ShopDetails}/>
     </div>
 );
 
